@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_main_page_main_pages",
+  "info": {
+    "displayName": "First screen",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "industries": {
+      "type": "richtext",
+      "required": true
+    },
+    "title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

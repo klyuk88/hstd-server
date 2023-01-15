@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_commitee_locals",
+  "info": {
+    "displayName": "Local"
+  },
+  "options": {},
+  "attributes": {
+    "list": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

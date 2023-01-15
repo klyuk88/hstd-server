@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_main_page_publications",
+  "info": {
+    "displayName": "Publication"
+  },
+  "options": {},
+  "attributes": {
+    "poster": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_main_page_history_photos",
+  "info": {
+    "displayName": "historyPhoto"
+  },
+  "options": {},
+  "attributes": {
+    "gallery": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

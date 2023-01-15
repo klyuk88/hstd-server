@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_commitee_organizings",
+  "info": {
+    "displayName": "Organizing"
+  },
+  "options": {},
+  "attributes": {
+    "avatar": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "post": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

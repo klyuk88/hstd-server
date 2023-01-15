@@ -1,0 +1,92 @@
+{
+  "kind": "collectionType",
+  "collectionName": "manuscripts",
+  "info": {
+    "singularName": "manuscript",
+    "pluralName": "manuscripts",
+    "displayName": "Рукописи",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "manuscript": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "abstract": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "cancellByUser": {
+      "type": "boolean",
+      "default": false
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "With Program Committee",
+        "Under Review",
+        "Revise",
+        "Accept, but need final editing",
+        "Accept",
+        "Reject"
+      ],
+      "default": "With Program Committee",
+      "required": true
+    },
+    "conference_topic": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::topic.topic",
+      "inversedBy": "manuscripts"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "manuscripts"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::author.author",
+      "inversedBy": "manuscripts"
+    },
+    "presentationFormat": {
+      "type": "enumeration",
+      "enum": [
+        "Oral Presentation",
+        "Virtual Presentation"
+      ],
+      "required": true
+    },
+    "participationFormat": {
+      "type": "enumeration",
+      "enum": [
+        "Poster presentations with publication in proceedings indexed by Scopus",
+        "Oral/virtual presentation with publication in proceedings by Scopus",
+        "Poster or oral/virtual presentations and publication paper in journal indexed in Russian database and RSCI (Web of Science)",
+        "Poster or oral/virtual presentations and publication abstract indexed in Russian database"
+      ],
+      "required": true
+    },
+    "decision": {
+      "type": "text"
+    }
+  }
+}

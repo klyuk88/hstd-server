@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_main_page_submissions",
+  "info": {
+    "displayName": "submission"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

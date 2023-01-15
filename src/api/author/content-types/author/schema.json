@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authors",
+  "info": {
+    "singularName": "author",
+    "pluralName": "authors",
+    "displayName": "Авторы",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "degree": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "surname": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "affiliation": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "corresponding": {
+      "type": "boolean",
+      "default": false,
+      "pluginOptions": {}
+    },
+    "manuscripts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::manuscript.manuscript",
+      "mappedBy": "authors"
+    }
+  }
+}

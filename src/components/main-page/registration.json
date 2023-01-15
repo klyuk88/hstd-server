@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_main_page_registrations",
+  "info": {
+    "displayName": "Registration",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "richtext"
+    },
+    "table": {
+      "type": "richtext"
+    },
+    "include": {
+      "type": "richtext"
+    }
+  }
+}

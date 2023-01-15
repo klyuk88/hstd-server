@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_commitee_programs",
+  "info": {
+    "displayName": "Program"
+  },
+  "options": {},
+  "attributes": {
+    "list": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
