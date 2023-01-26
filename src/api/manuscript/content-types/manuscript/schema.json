@@ -60,24 +60,6 @@
         }
       }
     },
-    "status": {
-      "type": "enumeration",
-      "enum": [
-        "With Program Committee",
-        "Under Review",
-        "Revise",
-        "Accept, but need final editing",
-        "Accept",
-        "Reject"
-      ],
-      "default": "With Program Committee",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "conference_topic": {
       "type": "relation",
       "relation": "manyToOne",
