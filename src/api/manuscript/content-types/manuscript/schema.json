@@ -10,11 +10,20 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "manuscript": {
       "type": "media",
@@ -22,7 +31,12 @@
       "required": false,
       "allowedTypes": [
         "files"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "abstract": {
       "type": "media",
@@ -30,11 +44,21 @@
       "required": false,
       "allowedTypes": [
         "files"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "cancellByUser": {
       "type": "boolean",
-      "default": false
+      "default": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "status": {
       "type": "enumeration",
@@ -47,7 +71,12 @@
         "Reject"
       ],
       "default": "With Program Committee",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "conference_topic": {
       "type": "relation",
@@ -67,26 +96,36 @@
       "target": "api::author.author",
       "inversedBy": "manuscripts"
     },
+    "decision": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "statusWork": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::status.status",
+      "inversedBy": "manuscripts"
+    },
     "presentationFormat": {
-      "type": "enumeration",
-      "enum": [
-        "Oral Presentation",
-        "Virtual Presentation"
-      ],
-      "required": true
+      "type": "string",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "participationFormat": {
-      "type": "enumeration",
-      "enum": [
-        "Poster presentations with publication in proceedings indexed by Scopus",
-        "Oral/virtual presentation with publication in proceedings by Scopus",
-        "Poster or oral/virtual presentations and publication paper in journal indexed in Russian database and RSCI (Web of Science)",
-        "Poster or oral/virtual presentations and publication abstract indexed in Russian database"
-      ],
-      "required": true
-    },
-    "decision": {
-      "type": "text"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
