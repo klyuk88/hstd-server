@@ -18,15 +18,7 @@ module.exports = createCoreService('api::manuscript.manuscript', ({
                 from: '"HSTD Conference" <hstd-conference@mai.ru>',
                 subject: subject,
                 text: '',
-                html: `
-<p style="font-size: 16px">
-Dear Participant!<br>
-${message}</p>
-<p style="font-size: 16px">
-Sincerely,<br>
-HSTD 2023 Organizing Committee
-</p>
-`,
+                html: message,
             })
             return res
 
