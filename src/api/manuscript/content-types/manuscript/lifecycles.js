@@ -8,7 +8,7 @@ module.exports = {
 
         const subject = {
             ru: 'Благодарим Вас за представление доклада на конференцию HSTD 23',
-            en: 'Thank you for submitting your paper to the conference HSTD 23'
+            en: 'Thank you for submitting your paper to the HSTD 2023'
         }
 
 
