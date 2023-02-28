@@ -137,6 +137,16 @@
       },
       "type": "richtext",
       "required": false
+    },
+    "partners": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "component": "main-page.partnery"
     }
   }
 }
