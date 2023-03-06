@@ -108,6 +108,19 @@
           "localized": true
         }
       }
+    },
+    "expertOpinion": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     }
   }
 }
