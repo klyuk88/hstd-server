@@ -114,7 +114,8 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "files"
+        "files",
+        "images"
       ],
       "pluginOptions": {
         "i18n": {
