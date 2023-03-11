@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "presentation_formats",
+  "info": {
+    "singularName": "presentation-format",
+    "pluralName": "presentation-formats",
+    "displayName": "Формат презентации",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "partication_formats": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::format-uchastiya.format-uchastiya",
+      "inversedBy": "presentation_formats"
+    },
+    "manuscripts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::manuscript.manuscript",
+      "mappedBy": "presentation"
+    }
+  }
+}

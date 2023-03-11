@@ -92,23 +92,6 @@
       "target": "api::status.status",
       "inversedBy": "manuscripts"
     },
-    "presentationFormat": {
-      "type": "string",
-      "required": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "participationFormat": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "expertOpinion": {
       "type": "media",
       "multiple": false,
@@ -122,6 +105,18 @@
           "localized": false
         }
       }
+    },
+    "participation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::format-uchastiya.format-uchastiya",
+      "inversedBy": "manuscripts"
+    },
+    "presentation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::presentation-format.presentation-format",
+      "inversedBy": "manuscripts"
     }
   }
 }

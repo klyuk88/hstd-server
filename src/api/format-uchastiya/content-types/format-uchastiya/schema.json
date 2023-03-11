@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "format_uchastiyas",
+  "info": {
+    "singularName": "format-uchastiya",
+    "pluralName": "format-uchastiyas",
+    "displayName": "Формат участия",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "workType": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "manuscript",
+        "abstract"
+      ]
+    },
+    "presentation_formats": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::presentation-format.presentation-format",
+      "mappedBy": "partication_formats"
+    },
+    "manuscripts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::manuscript.manuscript",
+      "mappedBy": "participation"
+    }
+  }
+}

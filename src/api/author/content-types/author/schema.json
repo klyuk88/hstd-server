@@ -47,6 +47,9 @@
       "relation": "manyToMany",
       "target": "api::manuscript.manuscript",
       "mappedBy": "authors"
+    },
+    "surname2": {
+      "type": "string"
     }
   }
 }
