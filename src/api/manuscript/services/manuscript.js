@@ -16,6 +16,7 @@ module.exports = createCoreService('api::manuscript.manuscript', ({
             const res = await strapi.plugins['email'].services.email.send({
                 to: email,
                 from: '"HSTD Conference" <hstd-conference@mai.ru>',
+                bcc: "m.shkurin@mai.ru",
                 subject: subject,
                 text: '',
                 html: message,
